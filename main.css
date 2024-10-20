@@ -1,0 +1,139 @@
+/* CUSTOM FONT FACES */
+@font-face {
+    font-family: 'lowGothic';
+    src: url('assets/fonts/LowGothic_8x10_Regular.ttf');
+}
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('assets/fonts/Minecraftia-Regular.ttf');
+}
+@font-face {
+    font-family: 'Hanno';
+    src: url('assets/fonts/hanno-regular.ttf');
+}
+
+/* ALL HTML */
+html {
+    margin: 0;
+    background: none;
+    font-family: 'LowGothic', sans-serif;
+    /* Firefox ONLY Scrollbars*/
+    scrollbar-width: thin;
+    scrollbar-color: black rgb(255, 255, 255, 0);
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+}
+.pg-container {
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+/* Chrome, Edge, Safari and Opera Scrollbars */
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+::-webkit-scrollbar-track {
+    color: white;
+}
+
+a {
+    color: black /* rgb(87, 213, 255) */;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration:line-through;
+}
+a:hover {
+    border-bottom: 2px solid rgb(87, 213, 255);
+}
+a:active {
+    color: inherit;
+}
+
+/* HEADER SECTION */
+#top {
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+#top img {
+    width: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+#top a:hover {
+    border-bottom: none;
+}
+.site-flavor {
+    font-family: inherit!important;
+    width: 540px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.smedia {
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.smedia-btn {
+    margin: 5px;
+    padding: 10px;
+    font-family: inherit!important;
+    font-size: 20px;
+    border: 2px solid rgb(87, 213, 255);
+    border-radius: 10px;
+    box-shadow: 0 7px rgb(87, 213, 255);
+    box-sizing: border-box;
+    background: white;
+}
+.smedia-btn:active {
+    border: 2px solid black;
+    box-shadow: 0 3px black;
+    margin-top: 12px;
+    margin-bottom: -5px;
+    background:rgb(87, 213, 255);
+    transition-duration: 1.5s;
+}
+.smedia-btn:hover {
+    transition-duration: 0.5s;
+}
+/* BODY SECTION */
+.content {
+    font-family: inherit!important;
+    width: 540px;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 100%;
+    overflow-wrap:normal;
+    margin:auto;
+}
+.disc {
+    display: block;
+    margin-left: 17%;
+}
+/* FOOTER */
+.foot {
+    position: sticky;
+    z-index: 999;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    background:rgb(235, 235, 235);
+}
